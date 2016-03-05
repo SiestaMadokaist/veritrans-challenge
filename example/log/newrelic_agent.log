@@ -5391,3 +5391,132 @@
 [2016-03-05 16:15:36 +0700 Ramas-MacBook-Pro.local (3670)] ERROR : Invalid license key, please contact support@newrelic.com
 [2016-03-05 16:15:36 +0700 Ramas-MacBook-Pro.local (3670)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
 [2016-03-05 16:16:02 +0700 Ramas-MacBook-Pro.local (3670)] INFO : Starting Agent shutdown
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] WARN : No configuration file found. Working directory = /root/veritrans/server-veritrans/example
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] WARN : Looked in these locations (based on defaults): /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/.newrelic/newrelic.yml, /root/newrelic.yml
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Environment: development
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Dispatcher: puma
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Application: development
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Installing Sinatra instrumentation
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Installing Net instrumentation
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 19:52:47 +0700 veritrans-challenge (15380)] INFO : Finished instrumentation
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] WARN : No configuration file found. Working directory = /root/veritrans/server-veritrans/example
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] WARN : Looked in these locations (based on defaults): /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/.newrelic/newrelic.yml, /root/newrelic.yml
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : Environment: development
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : Dispatcher: puma
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : Application: development
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 19:52:48 +0700 veritrans-challenge (15380)] INFO : Installing Grape instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] WARN : No configuration file found. Working directory = /root/veritrans/server-veritrans/example
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] WARN : Looked in these locations (based on defaults): /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/.newrelic/newrelic.yml, /root/newrelic.yml
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Environment: development
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Dispatcher: puma
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Application: development
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing Sinatra instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing Net instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Finished instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] WARN : No configuration file found. Working directory = /root/veritrans/server-veritrans/example
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] WARN : Looked in these locations (based on defaults): /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/.newrelic/newrelic.yml, /root/newrelic.yml
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Environment: development
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Dispatcher: puma
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Application: development
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 19:53:44 +0700 veritrans-challenge (15389)] INFO : Installing Grape instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] WARN : No configuration file found. Working directory = /root/veritrans/server-veritrans/example
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] WARN : Looked in these locations (based on defaults): /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/.newrelic/newrelic.yml, /root/newrelic.yml
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Environment: development
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Dispatcher: puma
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Application: development
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing Sinatra instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing Net instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Finished instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] WARN : No configuration file found. Working directory = /root/veritrans/server-veritrans/example
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] WARN : Looked in these locations (based on defaults): /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/.newrelic/newrelic.yml, /root/newrelic.yml
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Environment: development
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Dispatcher: puma
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Application: development
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 19:55:05 +0700 veritrans-challenge (15465)] INFO : Installing Grape instrumentation
+[2016-03-05 19:55:46 +0700 veritrans-challenge (15465)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 19:55:46 +0700 veritrans-challenge (15465)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 19:55:47 +0700 veritrans-challenge (15465)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 19:55:47 +0700 veritrans-challenge (15465)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 19:56:39 +0700 veritrans-challenge (15465)] INFO : Starting Agent shutdown
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] WARN : No configuration file found. Working directory = /root/veritrans/server-veritrans/example
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] WARN : Looked in these locations (based on defaults): /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/.newrelic/newrelic.yml, /root/newrelic.yml
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Environment: development
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Dispatcher: puma
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Application: development
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Installing ActiveRecord instrumentation
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Installing Sinatra instrumentation
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Installing Net instrumentation
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Installing middleware-based Excon instrumentation
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Installing deferred Puma::Rack::Builder instrumentation
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Installing Puma::Rack::Builder middleware instrumentation
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 19:56:46 +0700 veritrans-challenge (15545)] INFO : Finished instrumentation
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] WARN : No configuration file found. Working directory = /root/veritrans/server-veritrans/example
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] WARN : Looked in these locations (based on defaults): /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/veritrans/server-veritrans/example/config/newrelic.yml, /root/veritrans/server-veritrans/example/newrelic.yml, /root/.newrelic/newrelic.yml, /root/newrelic.yml
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : Environment: development
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : Dispatcher: puma
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : Application: development
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : Installing Typhoeus instrumentation
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : Not installing New Relic supported Grape instrumentation because the third party newrelic-grape gem is present
+[2016-03-05 19:56:47 +0700 veritrans-challenge (15545)] INFO : Installing Grape instrumentation
+[2016-03-05 19:56:48 +0700 veritrans-challenge (15545)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 19:56:48 +0700 veritrans-challenge (15545)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-05 19:56:50 +0700 veritrans-challenge (15545)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-05 19:56:50 +0700 veritrans-challenge (15545)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

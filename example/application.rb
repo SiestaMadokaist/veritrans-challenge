@@ -19,6 +19,7 @@ module Ramadoka
       header['Access-Control-Expose-Headers'] = 'ETag'
       header['Access-Control-Allow-Credentials'] = 'true'
     end
+    format(:json)
 
     options "/(*:url)", anchor: false do
       header["Access-Control-Allow-Origin"] = headers["Origin"]
