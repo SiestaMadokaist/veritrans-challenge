@@ -1,0 +1,23 @@
+development: &dev
+  adapter: mysql2
+  encoding: utf8
+  pool: 64
+  reaping_frequency: 5
+  reconnect: false
+  database: <%= ENV['VT_DB_DEV'] %>
+  username: <%= ENV['VT_USER_DEV'] %>
+  password: <%= ENV['VT_PASS_DEV'] %>
+  host: <%= ENV['VT_HOST_DEV'] %>
+  reconnect: true
+
+spec: &dev
+  adapter: mysql2
+  encoding: utf8
+  pool: 64
+  reaping_frequency: 5
+  reconnect: false
+  database: <%= ENV['VT_DB_SPEC'] %>
+  username: <%= ENV['VT_USER_SPEC'] %>
+  password: <%= ENV['VT_PASS_SPEC'] %>
+  host: <%= ENV['VT_HOST_SPEC'] %>
+  reconnect: true
