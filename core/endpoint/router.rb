@@ -10,7 +10,13 @@ class Ramadoka::Endpoint::Router
     @errors = []
     @optionals = []
     @requireds = []
-    @presenter_block = nil
+    @success_block = nil
+    @failure_block = nil
+    @presenter = nil
+  end
+
+  def endpoint
+    @klass
   end
 
   def meta_copy_to_different_klass(other_klass)
@@ -22,6 +28,9 @@ class Ramadoka::Endpoint::Router
     copy.description = @description
     copy.presenter = @presenter
     copy.method = @method
+    copy.resource = @resource
+    copy.success(&@success_block)
+    copy.failure(&@failure_block)
     copy
   end
 
@@ -35,16 +44,28 @@ class Ramadoka::Endpoint::Router
     @description = "(#{@klass}.#{@callback}) - #{value}"
   end
 
-  # @param value [Class]
-  def presenter(value, &block)
+  # @param value [Class] subclass of Grape::Entity
+  def presenter(value)
     @presenter = value
-    @presenter_block = block
+    # @presenter_block = block
+  end
+
+  def success(&block)
+    @success_block = block
+  end
+
+  def failure(&block)
+    @failure_block = block
   end
 
   # @param error_code [Integer]
   # @param err [Class]
-  def error(error_code, err)
-    @errors << [error_code, err.to_s, Ramadoka::Entity::Errors]
+  def error(err, err_code=nil)
+    error_code = Fallback.new(err_code)
+      .fallback_to{ err.code if err.respond_to?(:code) }
+      .fallback_to(503)
+      .value
+    @errors << [error_code, err.name, Ramadoka::Entity::Errors]
   end
 
   # @param value [Symbol]
@@ -82,18 +103,19 @@ class Ramadoka::Endpoint::Router
   end
 
   # @param klass [Class]
-  # subclass of Grape::API
+  # subclass of Grape::API, a mounted_class
   def add_logic_to(klass)
     _description = @description
-    _presenter = @presenter
-    _errors = @errors
+    _presenter = @presenter || @klass.presenter_entity
+    _errors = @klass.errors + @errors
     _params = params
     _method = @method
     _path = @path
-    _klass = @klass
+    _klass = @klass # the logic class
     _callback = @callback
     _resource = @resource
-    _presenter_block = @presenter_block
+    _on_success = @success_block || @klass.success_handler
+    _on_failure = @failure_block || @klass.failure_handler
     klass.instance_exec do
       resource _resource do
         desc(
@@ -106,8 +128,13 @@ class Ramadoka::Endpoint::Router
         end
         send(_method, _path) do
           req = _klass.new(self)
-          result = req.send(_callback)
-          _presenter_block.call(_presenter, result, req)
+          begin
+            result = req.send(_callback)
+          rescue => e
+            _on_failure.call(_presenter, e, _errors, req)
+          else
+            _on_success.call(_presenter, result, req)
+          end
         end
       end
     end

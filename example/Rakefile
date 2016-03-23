@@ -21,7 +21,6 @@ end
 
 task :console do
   require File.expand_path("../application", __FILE__)
-  # include API::Entities
   require 'pry'; binding.pry
 end
 
